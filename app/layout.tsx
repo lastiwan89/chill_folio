@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Open_Sans, Space_Grotesk } from "next/font/google";
+import { Open_Sans, Lora } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/navbar/header";
 import Footer from "@/components/footer";
@@ -9,8 +9,8 @@ const openSans = Open_Sans({
   subsets: ["latin"],
 });
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-cute",
+const lora = Lora({
+  variable: "--font-serif",
   subsets: ["latin"],
 });
 
@@ -26,9 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${spaceGrotesk.variable} ${openSans.variable} antialiased`}
-      >
+      <body className={`${lora.variable} ${openSans.variable} antialiased`}>
         <Header />
         {children}
         <Footer />

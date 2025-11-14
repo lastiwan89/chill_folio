@@ -13,7 +13,7 @@
   --color-custom-red: var(--custom-violet);
   --color-custom-bg: var(--custom-bg);
   --font-sans: var(--font-sans);
-  --font-cute: var(--font-cute);
+  --font-serif: var(--font-serif);
 }
 
 @layer base {

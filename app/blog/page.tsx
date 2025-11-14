@@ -1,13 +1,13 @@
 const Blog = () => {
   return (
     <div className="mx-auto flex max-h-screen max-w-4xl flex-col gap-2 px-8 py-8">
-      <h1 className="font-sans text-3xl font-bold capitalize">
+      <h1 className="font-serif text-3xl font-bold capitalize">
         Social Media Distraction
       </h1>
-      <p className="py-6 font-sans font-semibold tracking-wide">
+      <p className="py-6 font-serif font-semibold tracking-wide">
         November 13 2025
       </p>
-      <p className="font-sans leading-8">
+      <p className="font-serif leading-8">
         That is all start here, from this morning i am thinking all of what i do
         last time and now not doing it again. i want to make my day as simple as
         other do. like what Herman do in his &nbsp;
@@ -25,12 +25,12 @@ const Blog = () => {
         article too. I read article from &nbsp;
         <a className="cta" href="https://herman.bearblog.dev/">
           Herman blog
-        </a>{" "}
-        and also from a blog from &#160;
+        </a>
+        &#160; and also from a blog from &#160;
         <a className="cta" href="https://overreacted.io/">
           Dan Abramov
         </a>
-        &#160; i love how he build his blog article, i love the color on his
+        . &#160; i love how he build his blog article, i love the color on his
         article. also it inspire me to do the same nice blog like that.
       </p>
     </div>
