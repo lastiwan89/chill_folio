@@ -1,4 +1,13 @@
-import React from "react";
-const BlogCard = ({ children }: { children: React.ReactNode }) => {
-  return <div>{children}</div>;
+import Image from "next/image";
+
+const Card = ({ link, name }: { link: string; name: string }) => {
+  return (
+    <div>
+      <Image src={link} width={300} alt={name}>
+        <p>{name}</p>
+      </Image>
+    </div>
+  );
 };
+
+export default Card;

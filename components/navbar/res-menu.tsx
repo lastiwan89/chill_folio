@@ -19,12 +19,12 @@ const ResponsiveMenu = ({
           exit={{ opacity: 0, y: -100 }}
           className="absolute top-16 left-0 z-20 h-screen w-full md:hidden"
         >
-          <div className="m-2 rounded-2xl bg-linear-240 from-fuchsia-500 to-cyan-400 py-10 text-xl font-semibold text-white">
-            <ul className="flex flex-col items-center justify-center gap-10">
+          <div className="m-2 rounded-3xl bg-linear-to-tr from-cyan-400 to-fuchsia-500 py-10 text-xl font-semibold text-white">
+            <ul className="grid grid-rows-4 items-center justify-center gap-12">
               {NavLinks.map((items) => (
                 <Link
                   onClick={handleClick}
-                  className="tracking-widest uppercase"
+                  className="font-sans tracking-wide hover:text-gray-700"
                   key={items.id}
                   href={items.link}
                 >

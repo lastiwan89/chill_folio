@@ -30,7 +30,7 @@ const Navbar = () => {
             <ul className="flex items-center gap-6">
               {NavLinks.map((items) => (
                 <Link
-                  className="font-sans font-semibold tracking-wide"
+                  className="font-sans font-semibold tracking-wide hover:text-gray-700"
                   key={items.id}
                   href={items.link}
                 >
@@ -40,7 +40,7 @@ const Navbar = () => {
             </ul>
           </div>
           {/* hamburger menu here */}
-          <div onClick={handleClick} className="md:hidden">
+          <div onClick={handleClick} className="cursor-pointer md:hidden">
             {!isOpen ? <Menu size={24} strokeWidth={2.5} /> : <X />}
           </div>
         </div>
