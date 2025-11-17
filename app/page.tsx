@@ -1,3 +1,8 @@
+import { FaBootstrap, FaCss3Alt, FaHtml5, FaReact } from "react-icons/fa6";
+import { IoLogoJavascript } from "react-icons/io5";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { SiStyledcomponents, SiTypescript } from "react-icons/si";
+
 const Home = () => {
   return (
     <main className="flex flex-col gap-10 px-10 py-8">
@@ -17,11 +22,17 @@ const Home = () => {
       </div>
       <div>
         <h1 className="font-serif font-bold">My Tech Stack</h1>
-        <p className="font-serif">
-          React with Typescript in NextJS Framework with TailwindCSS for Styling
-          it, but it doesn&apos;t matter. I also hungry to learn anything to
-          make myself improve in this Tech.
-        </p>
+        <div className="flex gap-3 py-5">
+          <FaHtml5 size={30} />
+          <FaCss3Alt size={30} />
+          <IoLogoJavascript size={30} />
+          <SiTypescript size={30} />
+          <FaReact size={30} />
+          <RiNextjsFill size={30} />
+          <RiTailwindCssFill size={30} />
+          <SiStyledcomponents size={30} />
+          <FaBootstrap size={30} />
+        </div>
       </div>
     </main>
   );
