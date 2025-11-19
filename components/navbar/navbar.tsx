@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <div className="flex items-center justify-between bg-linear-to-r from-cyan-400 to-fuchsia-500 px-4 py-4 md:px-10">
+        <div className="flex items-center justify-between bg-linear-to-r from-blue-400 to-orange-400 px-4 py-4 md:px-10">
           {/*Logo here  */}
           <Link href="/" className="flex items-center gap-2 font-bold">
             <CloudDrizzleIcon
