@@ -26,4 +26,9 @@ export const NavLinks: Link[] = [
     title: "About",
     link: "/about",
   },
+  {
+    id: 5,
+    title: "Contact",
+    link: "/contact",
+  },
 ];

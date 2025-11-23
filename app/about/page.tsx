@@ -4,7 +4,7 @@ const About = () => {
       <div className="h-1/2 w-1/2 bg-cyan-400"></div>
       <div className="flex flex-col gap-6 font-serif text-white">
         <h1 className="text-2xl font-black">
-          I&apos;m Iwan, a Frontend Developer passionate in Reactjs. <br />
+          Hi..!!, I&apos;m Iwan, Passionate Frontend React Developer. <br />
           Based in Lombok, Indonesia.
         </h1>
         <div className="font-sans">
