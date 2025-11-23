@@ -41,7 +41,11 @@ const Navbar = () => {
           </div>
           {/* hamburger menu here */}
           <div onClick={handleClick} className="cursor-pointer md:hidden">
-            {!isOpen ? <Menu size={24} strokeWidth={2.5} /> : <X />}
+            {!isOpen ? (
+              <Menu size={24} color="white" strokeWidth={2.5} />
+            ) : (
+              <X size={24} strokeWidth={2.5} color="white" />
+            )}
           </div>
         </div>
       </nav>
