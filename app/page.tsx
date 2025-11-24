@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import {
   FaBootstrap,
@@ -22,15 +23,13 @@ const Home = () => {
             Hi..!!, I&apos;m iwan
           </h1>
           <p className="font-serif text-xl">
-            I&apos;m building scalable and responsive websites. solutions.
+            Frontend Developer with specialized in reactjs. <br />I build
+            responsive and great web apps.
           </p>
           <div className="mt-3">
-            <Link
-              href="/contact"
-              className="cursor-pointer border-2 border-white bg-linear-to-r from-cyan-400 to-fuchsia-500 px-4 py-2 font-serif font-black tracking-wider uppercase"
-            >
-              hire me
-            </Link>
+            <Button className="bg-blue-500 tracking-wider uppercase">
+              <Link href="/contact">hire me</Link>
+            </Button>
           </div>
         </div>
         <div>
