@@ -2,6 +2,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { NavLinks } from "../../constant/link";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 const ResponsiveMenu = ({
   isOpen,
@@ -17,14 +18,26 @@ const ResponsiveMenu = ({
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -100 }}
-          className="absolute top-16 left-0 z-20 h-screen w-full md:hidden"
+          className={cn(
+            "absolute top-16 left-0 z-20 h-screen w-full md:hidden",
+          )}
         >
-          <div className="m-2 rounded-3xl bg-linear-to-tr from-blue-500 to-gray-800 py-10 text-xl font-semibold text-white">
-            <ul className="grid grid-rows-4 items-center justify-center gap-12">
+          <div
+            className={cn(
+              "m-2 rounded-3xl bg-linear-to-tr from-blue-500 to-gray-800 py-10 text-xl font-semibold text-white",
+            )}
+          >
+            <ul
+              className={cn(
+                "grid grid-rows-4 items-center justify-center gap-12",
+              )}
+            >
               {NavLinks.map((items) => (
                 <Link
                   onClick={handleClick}
-                  className="text-center font-sans tracking-wide hover:text-orange-400"
+                  className={cn(
+                    "text-center font-sans tracking-wide hover:text-orange-400",
+                  )}
                   key={items.id}
                   href={items.link}
                 >

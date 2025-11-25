@@ -3,6 +3,7 @@ import { Open_Sans, Lora } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/navbar/header";
 import Footer from "@/components/footer";
+import { cn } from "@/lib/utils";
 
 const openSans = Open_Sans({
   variable: "--font-sans",
@@ -26,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lora.variable} ${openSans.variable} antialiased`}>
+      <body className={cn(`${lora.variable} ${openSans.variable} antialiased`)}>
         <Header />
         {children}
         <Footer />

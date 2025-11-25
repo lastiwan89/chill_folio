@@ -1,13 +1,15 @@
+import { cn } from "@/lib/utils";
+
 const About = () => {
   return (
-    <div className="grid h-screen grid-rows-2 px-6 py-8 md:grid-cols-2">
-      <div className="h-1/2 w-1/2 bg-cyan-400"></div>
-      <div className="flex flex-col gap-6 font-serif text-white">
-        <h1 className="text-2xl font-black">
+    <div className={cn("grid h-screen grid-rows-2 px-6 py-8 md:grid-cols-2")}>
+      <div className={cn("h-1/2 w-1/2 bg-cyan-400")}></div>
+      <div className={cn("flex flex-col gap-6 font-serif text-white")}>
+        <h1 className={cn("text-2xl font-black")}>
           Hi..!!, I&apos;m Iwan, Passionate Frontend React Developer. <br />
           Based in Lombok, Indonesia.
         </h1>
-        <div className="font-sans">
+        <div className={cn("font-sans")}>
           <p>
             I&apos;m self-taught developer passionate using react to develop
             websites.

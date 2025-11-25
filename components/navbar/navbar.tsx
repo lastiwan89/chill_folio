@@ -4,6 +4,7 @@ import Link from "next/link";
 import { CloudDrizzleIcon, Menu, X } from "lucide-react";
 import { NavLinks } from "../../constant/link";
 import ResponsiveMenu from "./res-menu";
+import { cn } from "@/lib/utils";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -13,24 +14,30 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <div className="flex items-center justify-between bg-linear-to-r from-blue-400 to-gray-800 px-4 py-4 md:px-10">
+        <div
+          className={cn(
+            "flex items-center justify-between bg-linear-to-r from-blue-400 to-gray-800 px-4 py-4 md:px-10",
+          )}
+        >
           {/*Logo here  */}
-          <Link href="/" className="flex items-center gap-2 font-bold">
+          <Link href="/" className={cn("flex items-center gap-2 font-bold")}>
             <CloudDrizzleIcon
               className="text-white"
               size={32}
               strokeWidth={1.5}
             />
-            <p className="font-sans text-xl font-black text-white">
+            <p className={cn("font-sans text-xl font-black text-white")}>
               chillrains
             </p>
           </Link>
           {/* menu goes here */}
-          <div className="hidden md:block">
-            <ul className="flex items-center gap-6">
+          <div className={cn("hidden md:block")}>
+            <ul className={cn("flex items-center gap-6")}>
               {NavLinks.map((items) => (
                 <Link
-                  className="font-sans font-semibold tracking-wide hover:text-gray-700"
+                  className={cn(
+                    "font-sans font-semibold tracking-wide hover:text-gray-700",
+                  )}
                   key={items.id}
                   href={items.link}
                 >
@@ -40,7 +47,7 @@ const Navbar = () => {
             </ul>
           </div>
           {/* hamburger menu here */}
-          <div onClick={handleClick} className="cursor-pointer md:hidden">
+          <div onClick={handleClick} className={cn("cursor-pointer md:hidden")}>
             {!isOpen ? (
               <Menu size={24} color="white" strokeWidth={2.5} />
             ) : (
