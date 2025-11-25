@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 import {
   FaBootstrap,
@@ -15,28 +16,40 @@ import { SiStyledcomponents, SiTypescript } from "react-icons/si";
 
 const Home = () => {
   return (
-    <main className="flex flex-col gap-10 px-10 py-8 text-white">
+    <main className={cn("flex flex-col gap-10 px-10 py-8 text-white")}>
       {/* hero section */}
-      <div className="flex flex-col-reverse items-center justify-center gap-8">
-        <div className="flex flex-col gap-2">
-          <h1 className="font-serif text-2xl font-bold text-orange-500">
+      <div
+        className={cn(
+          "flex flex-col-reverse items-center justify-center gap-8",
+        )}
+      >
+        <div className={cn("flex flex-col gap-2")}>
+          <h1 className={cn("font-serif text-2xl font-bold text-orange-500")}>
             Hi..!!, I&apos;m iwan
           </h1>
-          <p className="font-serif text-xl">
+          <p className={cn("font-serif text-xl")}>
             Frontend Developer with specialized in reactjs. <br />I build
             responsive and great web apps.
           </p>
           <div className="mt-3">
-            <Button className="bg-blue-500 tracking-wider uppercase">
+            <Button className={cn("bg-blue-500 tracking-wider uppercase")}>
               <Link href="/contact">hire me</Link>
             </Button>
           </div>
         </div>
         <div>
-          <div className="flex h-[300px] w-[300px] items-center justify-center rounded-sm bg-orange-500"></div>
-          <div className="mt-5 flex flex-col items-center justify-between gap-4">
+          <div
+            className={cn(
+              "flex h-[300px] w-[300px] items-center justify-center rounded-sm bg-orange-500",
+            )}
+          ></div>
+          <div
+            className={cn(
+              "mt-5 flex flex-col items-center justify-between gap-4",
+            )}
+          >
             <div>
-              <p className="flex gap-2 font-serif">
+              <p className={cn("flex gap-2 font-serif")}>
                 <IoLocationSharp />
                 Praya, Lombok, Indonesia
               </p>
@@ -55,8 +68,8 @@ const Home = () => {
       </div>
       {/* tech stack */}
       <div>
-        <h1 className="font-serif text-xl font-bold">My Tech Stack</h1>
-        <div className="mt-5 flex gap-3">
+        <h1 className={cn("font-serif text-xl font-bold")}>My Tech Stack</h1>
+        <div className={cn("mt-5 flex gap-3")}>
           <FaHtml5 size={30} color="#DB4C24" />
           <FaCss3Alt size={30} color="#0B66C2" />
           <IoLogoJavascript size={30} color="yellow" />
